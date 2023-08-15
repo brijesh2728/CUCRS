@@ -1,0 +1,39 @@
+.disp-flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.disp-flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.disp-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disp-flex-spacebw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.disp-flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.disp-none{
+    display:none;
+}
+.box-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overflow-y-scroll{
+    overflow-y: scroll;
+}
+.poppins{
+    font-family: Poppins;
+}
+.roboto{
+    font-family: "roboto";
+}

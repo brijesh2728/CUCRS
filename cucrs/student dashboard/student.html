@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar" class="disp-flex-col box-shadow">
+            <img src="/project 4sem/images/CUCRS_Logo1.png">
+            <div id="company-info" class="disp-flex-col-center">
+                <h4 id="company-name">STUDENT-NAME</h4>
+                <h5 id="company-id">21BCSXXXX</h5>
+            </div>
+            <div class="sidebar-options">
+                <div class="sidebar-option-div poppins">
+                    <li class="active" id="link-dashboard">Dashboard</li>
+                    <a style="text-decoration:none; color:black;" href="/project 4sem/student dashboard/jobs.html"><li  class="link-hover" id="link-post-job">Apply for a Job</li></a>
+                    <a style="text-decoration:none; color:black;" href="/project 4sem/student dashboard/profile_student.html"> <li class="link-hover" id="link-Profile">Profile</li></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="head-bar disp-flex-spacebw box-shadow">
+                <div>
+                    <button class="headbar-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22"  height="22" fill="White" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Change it with changing option -->
+                <p id="head-bar-title" style="color: White; font-family: poppins; font-size: 20px">Dashboard</p>
+                <div>
+                    <a href="student.html" style="text-decoration: none;">
+                        <button class="headbar-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="index.html">
+                        <button class="headbar-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22"  height="22" fill="White" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- Main content conatiner -->
+            <div class="main-content-container">
+                <!-- dashboard -->
+                <div class="main-content-subdiv box-shadow" id="dashboard-content">
+                    <div class="dashboard-info card-col">
+                        <div class="card-row">
+                            <div class="card box-shadow">
+                                <h1 class="poppins">Total Job Available</h1>
+                                <div id="total-job-posted" class="roboto">0</div>
+                            </div>
+                            <div class="card box-shadow">
+                                <h1 class="poppins">Applied Applications</h1>
+                                <div id="total-applicants" class="roboto">0</div>
+                            </div>
+                           
+                        </div>
+                        <div class="card-row">
+                            <div class="card background-crimson box-shadow">
+                                <h1 class="poppins">Selected Applications</h1>
+                                <div id="selected-applicants" class="roboto">0</div>
+                            </div>
+                            <div class="card background-crimson box-shadow">
+                                <h1 class="poppins">Rejected Applicants</h1>
+                                <div id="pending-applicants" class="roboto">0</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- apply for a Job -->
+                <!-- <div class="post-form-container main-content-subdiv box-shadow disp-none" id="post-form-content">
+                    <button onclick="document.location.href='E:\WebDev\project 4sem\student dashboard\jobs.html'">Apply for a Job</button>
+                </div> -->
+
+                <!-- Applied Students -->
+                <div class="main-content-subdiv box-shadow disp-none" id="applied-student-content">
+                    <table id="application-table">
+                        <thead>
+                            <tr>
+                                <td class="">Student Name</td>
+                                <td class="">Branch</td>
+                                <td class="">Passing Year</td>
+                                <td class="">Resume</td>
+                                <td class="">Status</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr>
+                                <td>Brijesh</td>
+                                <td>Computer Sciences</td>
+                                <td>2025</td>
+                                <td><a href="BRIJESH.pdf" target="_blank">Resume</a></td>
+                                <td>
+                                    <select class="app-status roboto">
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Rejected">Rejected</option>
+                                    </select>
+                                </td>
+                                <td><button class="lock-status .roboto">Lock Status</button></td>
+                            </tr>
+                            <tr>
+                                <td>Brijesh</td>
+                                <td>Computer Sciences</td>
+                                <td>2025</td>
+                                <td><a href="BRIJESH.pdf" target="_blank">Resume</a></td>
+                                <td>
+                                    <select class="app-status roboto">
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Rejected">Rejected</option>
+                                    </select>
+                                </td>
+                                <td><button class="lock-status .roboto">Lock Status</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- test code -->
+                    <button style="height: 40px; width: 100px; background: crimson; color:white;" id="Test-btn">Add Entry</button>
+                    <p style="font-size: 20px; font-family: poppins; ">This Button is for test purpose only</p>
+                    <!-- end -->
+                </div>
+
+                <!-- Profile -->
+                <div class="main-content-subdiv box-shadow disp-none" id="profile-content">
+                    <div class="p1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

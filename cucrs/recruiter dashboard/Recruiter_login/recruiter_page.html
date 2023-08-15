@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar" class="disp-flex-col box-shadow">
+            <img src="CUCRS_Logo.png">
+            <div id="company-info" class="disp-flex-col-center">
+                <h4 id="company-name">COMPANY-NAME</h4>
+                <h5 id="company-id">85XXXX</h5>
+            </div>
+            <div class="sidebar-options">
+                <div class="sidebar-option-div poppins">
+                    <li class="active" id="link-dashboard">Dashboard</li>
+                    <li class="link-hover" id="link-post-job">Post a Job</li>
+                    <li class="link-hover" id="link-Applied-student">Applied Students</li>
+                    <a style="text-decoration:none; color:black;" href="/project 4sem/recruiter dashboard/Recruiter_login/comp_profile.html"> <li class="link-hover" id="link-Profile">Profile</li></a>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="head-bar disp-flex-spacebw box-shadow">
+                <div>
+                    <button class="headbar-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22"  height="22" fill="White" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Change it with changing option -->
+                <p id="head-bar-title" style="color: White; font-family: poppins; font-size: 20px">Dashboard</p>
+                <div>
+                    <a href="recruiter_page.html" style="text-decoration: none;">
+                        <button class="headbar-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="index.html">
+                        <button class="headbar-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22"  height="22" fill="White" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- Main content conatiner -->
+            <div class="main-content-container">
+                <!-- dashboard -->
+                <div class="main-content-subdiv box-shadow" id="dashboard-content">
+                    <div class="dashboard-info card-col">
+                        <div class="card-row">
+                            <div class="card box-shadow">
+                                <h1 class="poppins">Total Job Posted</h1>
+                                <div id="total-job-posted" class="roboto">0</div>
+                            </div>
+                            <div class="card box-shadow">
+                                <h1 class="poppins">Total Applicants</h1>
+                                <div id="total-applicants" class="roboto">0</div>
+                            </div>
+                            <div class="card box-shadow">
+                                <h1 class="poppins">Hired Applicants</h1>
+                                <div id="hired-applicants" class="roboto">0</div>
+                            </div>
+                        </div>
+                        <div class="card-row">
+                            <div class="card background-crimson box-shadow">
+                                <h1 class="poppins">Selected Applicants</h1>
+                                <div id="selected-applicants" class="roboto">0</div>
+                            </div>
+                            <div class="card background-crimson box-shadow">
+                                <h1 class="poppins">Pending Applicants</h1>
+                                <div id="pending-applicants" class="roboto">0</div>
+                            </div>
+                            <div class="card background-crimson box-shadow">
+                                <h1 class="poppins">Rejected Applicants</h1>
+                                <div id="rejected-applicants" class="roboto">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post Job -->
+                <div class="post-form-container main-content-subdiv box-shadow disp-none" id="post-form-content">
+                    <div class="header-bar poppins disp-flex-center background-crimson">Job Information</div>
+                    <div class="form-div overflow-y-scroll">
+                        <form id="post-job">
+                            <div class="disp-flex-spacebw">
+                                <div class="form-element form-element-TwoInOne disp-flex-col">
+                                <label>Title of Job</label>
+                                    <input id="job-title" class="post-input" type="text" placeholder="Job Title" required>
+                                </div>
+                                <div class="form-element form-element-TwoInOne disp-flex-col">
+                                <label>Job Type</label>
+                                    <select id="job-type" class="post-input" required>
+                                        <option>select</option>
+                                        <option value="Internship">Internship</option>
+                                        <option value="PaidInternship">Paid Internship</option>
+                                        <option value="Parttime">Part Time</option>
+                                        <option value="Fulltime">Full Time</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-element disp-flex-col">
+                            <label>Job Description</label>
+                                <textarea id="job-description" class="textarea" rows="5" placeholder="Job description" required></textarea>
+                            </div>
+                            <div class="form-element disp-flex-col">
+                            <label>Minimum Qualification</label>
+                                <input id="min-qualification" class="post-input" type="text" placeholder="Minimum Qualification" required>
+                            </div>
+                            <div class="form-element disp-flex-col">
+                            <label>Skills Required</label>
+                                <textarea id="skillsreq" class="text-area" rows="5" placeholder="Skills Required" required></textarea>
+                            </div>
+                            <div class="disp-flex-spacebw">                                    
+                                <div class="form-element form-element-TwoInOne disp-flex-col">
+                                <label>Job Location</label>
+                                    <input id="job-location" class="post-input" type="text" placeholder="Job Location" required>
+                                </div>
+                                <div class="form-element form-element-TwoInOne disp-flex-col">
+                                <label>Working Hours</label>
+                                    <select id="working-hours" class="post-input"required>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-element disp-flex-col">
+                            <label>Expected Salary</label>
+                                <input id="expected-salary" class="post-input" type="text" placeholder="Expected Salary" required>
+                            </div>
+                            <div class="form-element disp-flex-col">
+                            <label>Entry Date</label>
+                                <input id="entrydate" class="post-input" type="date" placeholder="Entry Date" required>
+                            </div>
+                            <div class="form-element disp-flex-col">
+                            <label>Last Date to Apply</label>
+                                <input id="lastapplydate" class="post-input" type="date" placeholder="Last Apply Date" required>
+                            </div>
+                            
+                            <div class="form-button">
+                                <button class="form-btn" type="submit" name="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Applied Students -->
+                <div class="main-content-subdiv box-shadow disp-none" id="applied-student-content">
+                    <table id="application-table">
+                        <thead>
+                            <tr>
+                                <td class="">Student Name</td>
+                                <td class="">Branch</td>
+                                <td class="">Passing Year</td>
+                                <td class="">Resume</td>
+                                <td class="">Status</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <tr>
+                                <td>Brijesh</td>
+                                <td>Computer Sciences</td>
+                                <td>2025</td>
+                                <td><a href="BRIJESH.pdf" target="_blank">Resume</a></td>
+                                <td>
+                                    <select class="app-status roboto">
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Rejected">Rejected</option>
+                                    </select>
+                                </td>
+                                <td><button class="lock-status .roboto">Lock Status</button></td>
+                            </tr>
+                            <tr>
+                                <td>Brijesh</td>
+                                <td>Computer Sciences</td>
+                                <td>2025</td>
+                                <td><a href="BRIJESH.pdf" target="_blank">Resume</a></td>
+                                <td>
+                                    <select class="app-status roboto">
+                                        <option value="Pending">Pending</option>
+                                        <option value="Approved">Approved</option>
+                                        <option value="Rejected">Rejected</option>
+                                    </select>
+                                </td>
+                                <td><button class="lock-status .roboto">Lock Status</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- test code -->
+                    <button style="height: 40px; width: 100px; background: crimson; color:white;" id="Test-btn">Add Entry</button>
+                    <p style="font-size: 20px; font-family: poppins; ">This Button is for test purpose only</p>
+                    <!-- end -->
+                </div>
+
+                <!-- Profile -->
+                <div class="main-content-subdiv box-shadow disp-none" id="profile-content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

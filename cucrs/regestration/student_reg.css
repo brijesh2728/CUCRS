@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row {
+    display: table-row; 
+    background-image: url(asset5.png);
+    height: auto;
+  }
+  .col {
+    display: table-cell; 
+    padding: 1em;
+    border: 2px solid#ffffff;
+    box-shadow:  0 0 15px 0px #000;
+    max-width: 500px;
+  }
+.row{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+   
+ }
+ .student_reg h1{
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    background-color: #da1010;
+}
+ .col h2{
+    margin-right: 5px;
+    font-size: 30px;
+    font-family: poppins;
+    margin-bottom: 100px;
+    margin-top:0%;
+    justify-content: center;
+    position: relative;
+    left: 10px;
+    top:-100px
+    
+ }
+ .main-logo{
+    filter: contrast(6);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+img{
+    height:60%;
+    width:60%;
+    margin: 10px auto;
+}
+ body{
+     background-color:#ffffff;
+ }
+.form_container label{
+    font-family: roboto;
+}
+.student_reg{
+font-size: 20px;
+max-width:500px;
+max-height: 500px;
+padding: 10px;
+background-color:#da1010;
+margin: 0 auto;
+margin: 10px;
+box-shadow: 4px 3px 5px rgba(12, 12, 12, 0.1);
+border-radius: 10px;
+text-align:center;
+margin-top: 40px;
+overflow:scroll;
+margin-bottom: 10px;
+} 
+.student_reg h1{
+    font-family: roboto;
+    color: #f4eded;
+}
+.form_control{
+    margin-top: 20px;
+    margin-bottom: 10px;    
+    font-size: 15px;
+    font-weight: bold;
+    color: #01020c;
+    text-transform: uppercase;
+    text-align:center;
+    display: flex;
+    flex-direction:column;
+    
+    }
+.form_control label{
+    margin-right: 5px;
+    font-size: 15px;
+    font-family: poppins;
+}
+.form_container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit , minmax(200, 1fr));
+    gap: 3px;
+    margin-bottom:auto ;
+
+}
+input, select,textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    font: 15px;
+
+}
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+button{
+    background-color: rgb(89, 136, 200);
+    border: transparent solid2px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: aliceblue;
+    transition: 0.5s ease-in;
+}
+button:hover{
+    background-color: #f6f4f4;
+    border: 2px solid red;
+    color: black;
+    transition: 0.5s ease-out;
+}
+input:focus{
+    outline: tomato;
+}
+/* .sidebar{
+    position: fixed;
+    top:50%;
+    left: 0;
+    font-family: poppins;
+} */
+/* .sidebar div{
+    display:flex;
+    flex-direction: column;
+}
+.sidebar div span{
+    margin: 20px 0;
+    font-family: roboto;
+}
+.sidebar_r{
+    position: fixed;
+    top:50%;
+    right: 0;
+    font-family: poppins;
+}
+.sidebar_r div span{
+    margin: 20px 0;
+    font-family: roboto;
+    
+}
+.sidebar_r div{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+} */

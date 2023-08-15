@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+*{
+    margin:0;
+    padding:0;
+    --crimson: crimson;
+    --blue: #183344;
+    --green: #04AA6D;
+    overflow: hidden;
+    cursor: default;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Side Bar CSS */
+#sidebar{
+    height: 100vh;
+    width: 20%;
+    background: white;
+}
+#sidebar img{
+    height:90px;
+    width:120px;
+    margin: 4px;
+    margin-left: 8px;
+    filter: contrast(1.5);
+}
+#company-info{
+    width: 100%;
+    /* height: 30px; */
+    margin: 5px 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: black;
+    font-family: audiowide;
+    border-top: 2px solid rgb(176, 176, 176);
+    border-bottom: 2px solid rgb(176, 176, 176);
+}
+.sidebar-option-div{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    color: black;
+}
+.sidebar-option-div li{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    list-style-type: none;
+    height: 22px;
+    width: 100%;
+    transition: 0.2s;
+}
+.active{
+    background:crimson;
+    color:white;
+}
+/* To remove hover effect from active button */
+.link-hover a{
+    color: black;
+    text-decoration: none;
+
+}
+.link-hover:hover{  
+    background: rgb(218, 218, 218);
+    color: black;
+}
+/* Right-container */
+.right-container{
+    height: 100vh;
+    width: 80%;
+    float: right;
+}
+
+/* head-bar css */
+.head-bar{
+    background: black;
+    height: 45px;
+    width: 100%;
+}
+.headbar-btn{
+    background:transparent;
+    border: none;
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+/* Main-content-container */
+.main-content-container{
+    width: 100%;
+    height: calc(100vh - 45px);
+}
+
+/* Dashboard */
+.main-content-subdiv{
+    position: relative;
+    top: 1.5%;
+    left: 1%;
+    height: 98.5%;
+    width: 99%;
+}
+.dashboard-info{
+    padding:20px;
+    display: flex;
+}
+.dashboard-info .card{
+    height: 140px;
+    width: 33%;
+    margin: 10px;
+}
+.dashboard-info .card h1{
+    font-weight:600;
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 25px;
+}
+.dashboard-info .card div{
+    height: 50px;
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(194, 186, 186);
+}
+.card-col{
+    display: flex;
+    flex-direction: column;
+}
+.card-row{
+    display: flex;
+}
+.background-crimson{
+    background: crimson;
+    color: white;
+}
+
+/* Post Form */
+.post-form-container .header-bar{
+    padding:10px;
+    font-size: 18px;
+}
+.form-div{
+    height: calc(100vh - 1.5% - 45px - 28px);
+}
+form{
+    padding: 20px;
+}
+form label{
+    font-family: poppins;
+}
+.form-element{
+    margin: 10px 0;
+}
+.form-element input{
+    border: 1px solid grey;
+    padding: 5px;
+    padding-left: 8px;
+    font-family: roboto;
+}
+.form-element select{
+    border: 1px solid grey;
+    padding: 5px;
+    padding-left: 8px;
+    font-family: roboto;
+}
+.form-element textarea{
+    border: 1px solid grey;
+    padding: 5px;
+    padding-left: 8px;
+    font-family: roboto;
+}
+.form-element-TwoInOne{
+    width: 48%;
+}
+.form-btn{
+    float: right;
+    border: none;
+    border-radius: 4px;
+    background: crimson;
+    width: 140px;
+    height: 35px;
+    font-family: poppins;
+    color:white;
+    transition: 0.5s;
+    margin-top:20px;
+    margin-bottom: 60px;
+}
+.form-btn:hover{
+    background-color: black;
+}
+
+/* Applied students */
+#applied-student-content{
+    overflow-y: scroll;
+}
+#application-table{
+    margin: 20px auto;
+    width: 90%;
+    border-collapse: collapse;
+}
+#application-table thead {
+    color:crimson;
+    width: 100%;
+}
+#application-table thead tr{
+    font-weight: bolder;
+}
+#application-table tr{
+    border-bottom: 1px solid black;
+    font-family: roboto;
+}
+#application-table th{
+    border-bottom: 1px solid black;
+    font-family: roboto;
+}
+th, td{
+    padding: 10px;
+}
+.app-status{
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+}
+.app-status option{
+    background: white;
+    color: black;
+    padding: 10px 0;
+}
+.lock-status{
+    height: 40px;
+    width:100%;
+    border-radius: 22px;
+    border:none;
+    background-color: var(--green);
+    color: white;
+    transition:0.5s;
+}
+.lock-status:hover{
+    background: crimson;
+}

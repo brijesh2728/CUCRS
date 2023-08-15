@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cmp_styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar" class="disp-flex-col box-shadow">
+            <img src="CUCRS_Logo.png">
+            <div id="company-info" class="disp-flex-col-center">
+                <h4 id="company-name">COMPANY-NAME</h4>
+                <h5 id="company-id">85XXXX</h5>
+            </div>
+            <div class="sidebar-options">
+                <div class="sidebar-option-div poppins">
+                    <li class="active" id="link-dashboard">Dashboard</li>
+                    <li class="link-hover" id="link-post-job">Post a Job</li>
+                    <li class="link-hover" id="link-Applied-student">Applied Students</li>
+                    <li class="link-hover" id="link-Profile">Profile</li>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="head-bar disp-flex-spacebw box-shadow">
+                <div>
+                    <button class="headbar-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22"  height="22" fill="White" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Change it with changing option -->
+                <p id="head-bar-title" style="color: White; font-family: poppins; font-size: 20px">Profile</p>
+                <div>
+                    <a href="student.html" style="text-decoration: none;">
+                        <button class="headbar-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="index.html">
+                        <button class="headbar-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22"  height="22" fill="White" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- Main content conatiner -->
+            <div class="main-content-container">
+                <div class="main-content-subdiv box-shadow" id="profile-content">
+                    <div class="profile-1">
+                        <div class="left"><img src="" style="width:75%; height:200px; border-radius: 200px; border: 2px solid black;"></div>
+                        <div class="right">
+                            <h2 class="poppins info-field">Name Here</h1>
+                            <h2 class="poppins info-field">XXXX</h1>
+                            <h2 class="poppins info-field">Samplemain@gmail.com</h1>
+                            <h2 class="poppins info-field">9876543210</h1>
+                            <h2 class="poppins info-field">Company Address 123 Main St, xxxx India </h1>
+                        </div>
+                    </div>
+                    <!-- mission and objective -->
+                    <div style="height: 70px; width: 100%; background: crimson; display: flex; align-items: center;">
+                        <p class="poppins" style="font-size: 30px; color: white; padding-left: 40px;">Mission and Objective</p>
+                    </div>
+                    <p class="roboto" style="font-size: 25px; color: black; padding: 20px 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lectus quis risus commodo suscipit eget vel ante. Integer ac semper lorem. Nullam quis arcu eget lorem lobortis aliquam a eget velit. Duis ut velit velit.</p>
+                    
+                    <!-- Skills required -->
+                    <div style="height: 70px; width: 100%; background: crimson; display: flex; align-items: center;">
+                        <p class="poppins" style="font-size: 30px; color: white; padding-left: 40px;">Skill Required</p>
+                    </div>
+                    <ul class="roboto" style="font-size: 25px; color: black; padding: 20px 40px;">
+                        <li>Python</li>
+                        <li>java</li>
+                        <li>Web dvelopment</li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Header">
+        <div class="main-logo">
+            <img src="/project 4sem/images/logoCUCRS.png" alt="Image not found" >
+        </div>
+    </div>
+    <div class="login-container disp-flex-center">
+        <!-- Student Login -->
+        <div class="login-card login-card-b login-card-hover box-shadow">
+            <!-- Login card -->
+            <div class="login">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#183344" height="30px" width="30px">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                </svg>  
+                <h2 class="heading">Student Login</h2>
+                <div class="login-card-body">
+                    <p class="paragraph">Login using your Username and Password to apply for jobs or check status.</p>
+                </div>
+                <button class="btn login-button">Login</button>
+            </div>
+            <!-- Login card after clicking on login -->
+            <div class="login-window disp-none">
+                <div class="window-head">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" height="40px">
+                        <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+                    </svg> 
+                    <button class="close_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill="white" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>  
+                    </button>                       
+                </div>
+                <form class="form disp-flexrow-center">
+                    <input type="text" id="username" name="username" placeholder="Enter your UID">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </form>
+                <button class="btn" onclick="document.location.href='/project 4sem/student dashboard/student.html'"> Login</button>
+                <div class="disp-flex-center" id="create-account">
+                    <p class="text">Don't have an account ?</p>
+                    <p class="link"><a href="/project 4sem/regestration/student_reg.html">Create an Account</a></p>
+                </div>
+            </div> 
+        </div>
+        <!-- Recruiter Login -->
+        <div class="login-card login-card-b login-card-hover box-shadow">
+            <!-- Login card -->
+            <div class="login">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#183344" height="30px" width="30px">
+                    <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                    <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+                </svg>
+                <h1 class="heading">Recruiter Login</h1>
+                <div class="login-card-body"> 
+                    <p class="paragraph">Login using your Username and Password to check student's application and approve them.</p>
+                </div>
+                <button class="btn login-button">Login</button> 
+            </div>
+            <!-- Login card after clicking on login -->
+            <div class="login-window disp-none">
+                <div class="window-head">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" height="40px">
+                        <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                        <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+                    </svg> 
+                    <button class="close_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill="white" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>  
+                    </button>                       
+                </div>
+                <form class="form disp-flexrow-center">
+                    <input type="text" id="username" name="username" placeholder="Enter your registered E-mail">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </form>
+                <button class="btn" onclick="document.location.href='/project 4sem/recruiter dashboard/Recruiter_login/recruiter_page.html'"> Login</button>
+                <div class="disp-flex-center" id="create-account">
+                    <p class="text">Company not registered ?</p>
+                    <p class="link"><a href="/project 4sem/regestration/company_reg.html">Register now!</a></p>
+                </div>
+            </div> 
+        </div>
+        <!-- Admin Login -->
+        <div class="login-card login-card-b login-card-hover box-shadow">
+            <!-- Login card -->
+            <div class="login">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#183344" height="30px" width="30px">
+                    <path d="M11.584 2.376a.75.75 0 01.832 0l9 6a.75.75 0 11-.832 1.248L12 3.901 3.416 9.624a.75.75 0 01-.832-1.248l9-6z" />
+                    <path fill-rule="evenodd" d="M20.25 10.332v9.918H21a.75.75 0 010 1.5H3a.75.75 0 010-1.5h.75v-9.918a.75.75 0 01.634-.74A49.109 49.109 0 0112 9c2.59 0 5.134.202 7.616.592a.75.75 0 01.634.74zm-7.5 2.418a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75zm3-.75a.75.75 0 01.75.75v6.75a.75.75 0 01-1.5 0v-6.75a.75.75 0 01.75-.75zM9 12.75a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75z" clip-rule="evenodd" />
+                    <path d="M12 7.875a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" />
+                </svg>          
+                <h1 class="heading">Admin Login</h1>
+                <div class="login-card-body"> 
+                    <p class="paragraph">For Admin's only</p>
+                </div>
+                <button class="btn login-button">Login</button> 
+            </div>
+            <!-- Login card after clicking on login -->
+            <div class="login-window disp-none">
+                <div class="window-head">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" height="40px">
+                        <path d="M11.584 2.376a.75.75 0 01.832 0l9 6a.75.75 0 11-.832 1.248L12 3.901 3.416 9.624a.75.75 0 01-.832-1.248l9-6z" />
+                        <path fill-rule="evenodd" d="M20.25 10.332v9.918H21a.75.75 0 010 1.5H3a.75.75 0 010-1.5h.75v-9.918a.75.75 0 01.634-.74A49.109 49.109 0 0112 9c2.59 0 5.134.202 7.616.592a.75.75 0 01.634.74zm-7.5 2.418a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75zm3-.75a.75.75 0 01.75.75v6.75a.75.75 0 01-1.5 0v-6.75a.75.75 0 01.75-.75zM9 12.75a.75.75 0 00-1.5 0v6.75a.75.75 0 001.5 0v-6.75z" clip-rule="evenodd" />
+                        <path d="M12 7.875a1.125 1.125 0 100-2.25 1.125 1.125 0 000 2.25z" />
+                    </svg> 
+                    <button class="close_button">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" fill="white" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>  
+                    </button>                       
+                </div>
+                <form class="form disp-flexrow-center">
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </form>
+                <button class="btn">Login</button>
+                <div class="disp-flex-center" id="create-account">
+                    <p class="text">Not an Admin ?</p>
+                    <p class="link"><a href="">Go back</a></p>
+                </div>
+            </div>
+            </div>   
+        </div>
+    </div>
+<script src="first.js"></script>
+</body>
+</html>

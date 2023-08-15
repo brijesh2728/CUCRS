@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="student_reg.css">
+</head>
+<body>
+   <div class="row">
+       <div class ="col">
+           <div class="main-logo">
+               <img src="/project 4sem/images/logoCUCRS.png" alt="Image not found" >
+           </div>
+           <h2>Welcome to Chandigarh University Recruitment System</h2>
+       </div>
+       <div class="col">
+           <div class="student_reg">
+           <h1>Student  Registration</h1>
+           <form action="">
+            <div class="form_container">
+                <div class="form_control">
+                    
+                    <label for="name">Name: </label>
+                    <input id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    />
+                </div>
+                <div class="form_control">
+                <label for="dob"> D.O.B: </label>
+                 <input id="date"
+                 name="dob"
+                 placeholder="Enter your date of birth"
+                 type="date"
+                 value="2023-03-03"
+                 />
+                 </div>
+                 <div class="form_control">
+                 <label for="cgpa">CGPA: </label>
+                 <input type="number" name="cgpa" id="cgpa"
+                 placeholder="Enter your CGPA"/>
+                </div>
+                <div class="form_control">
+                 <label for="curr_sem">Current Sem: </label>
+                <input type="number" name="curr_sem" id="curr_sem"
+                placeholder="Enter your current sem"/>
+                </div>
+                <div class="form_control">
+                <label for="father_name">Father Name: </label>
+                <input type="name" name=" father_name" id="father_name"
+                placeholder="Enter  your father's name "/>
+                </div>
+                <div class="form_control">
+                <label for="poy">Passing out year: </label>
+                <input type="number" name="poy" id="poy"
+                placeholder="Enter your passing out year"/>
+                 </div>
+                 <div class="form_control">
+                    <label for="poy">UID: </label>
+                    <input type="number" name="uid" id="uid"
+                    placeholder="Enter your UID"/>
+                     </div>
+                     <div class="form_control">
+                        <label for="poy">Create Password: </label>
+                        <input type="password" name="password" id="password"
+                        placeholder="Enter 8 digit password"/>
+                         </div>
+                 <div class="form_control">
+                <label for="address">Address: </label>
+                <textarea  name="address" id="address" cols="50" rows="5" placeholder="Enter your address">
+                </textarea>
+                </div>
+                <div class="form_control">
+                <label for="phone">Mobile no.: </label>
+                <input type="number" name="phone" id="phone" placeholder="Enter your mobile no."
+                />
+                </div>
+                <div class="form_control">
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email"
+                />
+                 </div>
+                 <div class="form_control">
+                <label for="back">Active Backs: </label>
+                <input type="number" name="back" id="back" placeholder="Enter no. of backs"
+                />
+               </div>
+                <div class="form_control">
+                <label for="option">Applying for</label>
+                <select name="option" id="option">
+                    <option value="">Select the role</option>
+                    <option value="intern">INTERNSHIP</option>
+                    <option value="full">FULL TIME</option>
+                </select>
+                 </div>
+                 <div class="form_control">
+                <label for="cv"> Upload your CV: </label>
+                <input type="file" name="cv" id="cv"/>
+                </div>
+            </div>
+           
+            <div class="button">
+             <button type="submit"> Register Now</button>    
+            </div>
+            </div>
+            </form> 
+          </div>
+       </div>
+   </div>
+</body>
+</html>

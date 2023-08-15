@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0
+    /* #CB4C4E */
+}
+/* navbar */
+.navbar img{
+    padding:8px 0;
+}
+.navbar{
+    background: #1e272c;
+    width: calc(100%-60px);
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+}
+.scrolled{
+    height: 60px;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li::after{
+    content:" ";
+    height: 4px;
+    border-radius: 5px;
+    width: 0%;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s ease-in-out;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* Section 1 */
+.section-1{
+    width:100%;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(section1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-1 h1{
+    color: white;
+    font-size: 55px;
+}
+.section-1 button{
+    height: 50px;
+    width: 200px;
+    border:2px solid black;
+    font-size: 20px;
+    border-radius: 30px;
+    background: crimson;
+    color:white;
+    margin-top: 30px;
+    transition: 0.2s;
+}
+.section-1 button:hover{
+    border:2px solid white;
+    background: black;
+}
+
+/* section-2 */
+.section-2{
+    height:540px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-feature{
+    height:300px;
+    width: 40%;
+    margin: 50px;
+}
+.card-feature img{
+    background: #1e272c;
+}
+.card-feature h1{
+    margin-top: 10px;
+    padding: 10px;
+    padding-left:20px;
+}
+.card-feature p{
+    padding:0 20px;
+}
+
+/* section-3 */
+.section-3{
+    width:100%;
+    height:200px;
+    background:#1e272c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data-card{
+    height: 150px;
+    width: 200px;
+    margin:0 30px;
+}
+.data-card-txt{
+    color:crimson;
+    font-size: 40px;
+    margin-top:5px;
+    font-weight: bold;
+    font-family: roboto;
+}
+
+/* section-4 */
+.section-4{
+    width: 100%;
+    height: 400px;
+}
+.Why-us{
+    height: 140px;
+    width: 30%;
+}
+
+/* section-5 */
+.section-5{
+    width: 100%;
+    height: 380px;
+    background: #1e272c;
+}
+.easy-way{
+    height:200px;
+}
+.easy-way-card{
+    height: 140px;
+    width: 140px;
+    margin:20px 50px;
+}
+
+/* section-6 */
+.section-6{
+    width:100%;
+    height: 800px;
+}
+.feedback-div{
+    height: 300px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback{
+    height: 220px;
+    width:40%;
+    margin:20px 30px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 320px;
+    background: #1e272c;
+}
+.foot-logo{
+    padding-top:60px;
+    padding-left:70px;
+    height: 80px;
+    width: 500px;
+    display: flex;
+}
+.social-media{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media a{
+    text-decoration: none;
+    margin:0 20px;
+}
+.social-media svg:hover{
+    fill:crimson;
+}

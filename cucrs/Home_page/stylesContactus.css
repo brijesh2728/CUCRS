@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0
+    /* #CB4C4E */
+}
+
+/* Navbar */
+.navbar img{
+    padding:8px 0;
+}
+.navbar{
+    background: #1e272c;
+    width: calc(100%-60px);
+    padding: 0 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+}
+.scrolled{
+    height: 60px;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li::after{
+    content:" ";
+    height: 4px;
+    border-radius: 5px;
+    width: 0%;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s ease-in-out;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/* section-1 */
+.section-1{
+    width: calc(100%-80px);
+    margin-top: 40px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+}
+.post-input{
+    padding:8px;
+    width: 600px;
+    height: 36px;
+    border: 2px solid #1e272c;
+    margin: 5px 0;
+}
+
+#Message{
+    height: 180px;
+}
+.section-1--1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.submit-msg{
+    margin-top: 20px;
+    margin-left: 480px;
+    height: 40px;
+    width: 140px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background: crimson;
+    color: white;
+    transition: 0.4s;
+}
+.submit-msg:hover{
+    background: black;
+    border: 3px solid crimson;
+}
